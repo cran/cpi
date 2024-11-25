@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -58,6 +58,6 @@ cpi(task = tsk("iris"),
 #      learner = lrn("classif.ranger", predict_type = "prob", num.trees = 10),
 #      resampling = rsmp("cv", folds = 5))
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 options(old_digits)
 

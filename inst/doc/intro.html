@@ -30,26 +30,27 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -63,55 +64,54 @@ pre > code.sourceCode { white-space: pre-wrap; }
 pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -120,13 +120,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -343,27 +350,27 @@ implements a conditional variable importance measure which can be
 applied to any supervised learning algorithm and loss function.</p>
 <p>As a first example, we calculate the CPI for a random forest on the
 wine data with 5-fold cross validation:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mlr3)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mlr3learners)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cpi)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>))</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE test statistic estimate p.value    ci.lo</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.00106 0.00346    t      0.31  0.00106  0.3798 -0.00466</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.02759 0.01088    t      2.54  0.02759  0.0060  0.00961</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.00019 0.00019    t      1.00  0.00019  0.1593 -0.00012</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4            color  0.21308 0.18515    t      1.15  0.21308  0.1257 -0.09306</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5         dilution  0.00046 0.00771    t      0.06  0.00046  0.4761 -0.01229</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  0.00000 0.00000    t      0.00  0.00000  1.0000  0.00000</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.00151 0.00705    t      0.21  0.00151  0.4155 -0.01015</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.00826 0.00494    t      1.67  0.00826  0.0480  0.00010</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9            malic  0.00047 0.00412    t      0.11  0.00047  0.4551 -0.00635</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids  0.00073 0.00205    t      0.36  0.00073  0.3612 -0.00266</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11         phenols -0.00351 0.00346    t     -1.01 -0.00351  0.8441 -0.00922</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.00162 0.00389    t      0.42  0.00162  0.3389 -0.00481</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.08475 0.03003    t      2.82  0.08475  0.0027  0.03509</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(mlr3)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">library</span>(mlr3learners)</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">library</span>(cpi)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE test statistic estimate p.value    ci.lo</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.00106 0.00346    t      0.31  0.00106  0.3798 -0.00466</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.02759 0.01088    t      2.54  0.02759  0.0060  0.00961</span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.00019 0.00019    t      1.00  0.00019  0.1593 -0.00012</span></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a><span class="co">#&gt; 4            color  0.21308 0.18515    t      1.15  0.21308  0.1257 -0.09306</span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a><span class="co">#&gt; 5         dilution  0.00046 0.00771    t      0.06  0.00046  0.4761 -0.01229</span></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  0.00000 0.00000    t      0.00  0.00000  1.0000  0.00000</span></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.00151 0.00705    t      0.21  0.00151  0.4155 -0.01015</span></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.00826 0.00494    t      1.67  0.00826  0.0480  0.00010</span></span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a><span class="co">#&gt; 9            malic  0.00047 0.00412    t      0.11  0.00047  0.4551 -0.00635</span></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids  0.00073 0.00205    t      0.36  0.00073  0.3612 -0.00266</span></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a><span class="co">#&gt; 11         phenols -0.00351 0.00346    t     -1.01 -0.00351  0.8441 -0.00922</span></span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.00162 0.00389    t      0.42  0.00162  0.3389 -0.00481</span></span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.08475 0.03003    t      2.82  0.08475  0.0027  0.03509</span></span></code></pre></div>
 <p>The result is a CPI value for each feature, i.e. how much did the
 loss function change when the feature was replaced with its knockoff
 version, with corresponding standard errors, test statistics, p-values
@@ -376,23 +383,23 @@ and confidence interval.</p>
 learning tasks and makes it quite easy to change these components. For
 example, we can change to regularized logistic regression and a simple
 holdout as resampling strategy:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE test statistic estimate p.value    ci.lo</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  8.6e-03 1.4e-02    t      0.62  8.6e-03   0.269 -1.5e-02</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  2.0e-02 1.4e-02    t      1.46  2.0e-02   0.074 -2.8e-03</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3              ash  3.1e-04 2.8e-04    t      1.11  3.1e-04   0.136 -1.6e-04</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4            color  3.2e-02 2.1e-02    t      1.57  3.2e-02   0.061 -2.2e-03</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5         dilution  8.2e-03 7.2e-03    t      1.15  8.2e-03   0.128 -3.8e-03</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  4.0e-06 4.0e-06    t      1.01  4.0e-06   0.157 -2.6e-06</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7              hue  6.4e-03 8.1e-03    t      0.79  6.4e-03   0.217 -7.1e-03</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9            malic -8.0e-03 9.3e-03    t     -0.85 -8.0e-03   0.802 -2.4e-02</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -9.6e-04 2.9e-03    t     -0.33 -9.6e-04   0.627 -5.9e-03</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11         phenols  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13         proline  3.5e-03 1.8e-02    t      0.19  3.5e-03   0.424 -2.7e-02</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE test statistic estimate p.value    ci.lo</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  8.6e-03 1.4e-02    t      0.62  8.6e-03   0.269 -1.5e-02</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  2.0e-02 1.4e-02    t      1.46  2.0e-02   0.074 -2.8e-03</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co">#&gt; 3              ash  3.1e-04 2.8e-04    t      1.11  3.1e-04   0.136 -1.6e-04</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt; 4            color  3.2e-02 2.1e-02    t      1.57  3.2e-02   0.061 -2.2e-03</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="co">#&gt; 5         dilution  8.2e-03 7.2e-03    t      1.15  8.2e-03   0.128 -3.8e-03</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  4.0e-06 4.0e-06    t      1.01  4.0e-06   0.157 -2.6e-06</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="co">#&gt; 7              hue  6.4e-03 8.1e-03    t      0.79  6.4e-03   0.217 -7.1e-03</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="co">#&gt; 9            malic -8.0e-03 9.3e-03    t     -0.85 -8.0e-03   0.802 -2.4e-02</span></span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -9.6e-04 2.9e-03    t     -0.33 -9.6e-04   0.627 -5.9e-03</span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="co">#&gt; 11         phenols  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.0e+00 0.0e+00    t      0.00  0.0e+00   1.000  0.0e+00</span></span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="co">#&gt; 13         proline  3.5e-03 1.8e-02    t      0.19  3.5e-03   0.424 -2.7e-02</span></span></code></pre></div>
 <p>We refer to <a href="https://mlr3book.mlr-org.com/">the mlr3 book</a>
 for full introduction and reference.</p>
 <p>The loss function used by the <code>cpi()</code> function is
@@ -401,24 +408,24 @@ specified with <code>measure</code>. By default, the mean squared error
 <em>mlr3</em>, this corresponds to the measures <code>&quot;regr.mse&quot;</code>
 and <code>&quot;classif.logloss&quot;</code>. We re-run the example above with
 simple classification error (ce):</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>), </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">measure =</span> <span class="fu">msr</span>(<span class="st">&quot;classif.ce&quot;</span>))</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;           Variable    CPI    SE test statistic estimate p.value  ci.lo</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.017 0.030    t      0.57    0.017    0.28 -0.032</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4            color  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5         dilution -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8        magnesium -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9            malic -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11         phenols  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.017 0.045    t      0.38    0.017    0.35 -0.059</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>), </span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>    <span class="at">measure =</span> <span class="fu">msr</span>(<span class="st">&quot;classif.ce&quot;</span>))</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt;           Variable    CPI    SE test statistic estimate p.value  ci.lo</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.017 0.030    t      0.57    0.017    0.28 -0.032</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co">#&gt; 4            color  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="co">#&gt; 5         dilution -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; 8        magnesium -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; 9            malic -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -0.017 0.017    t     -1.00   -0.017    0.84 -0.045</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="co">#&gt; 11         phenols  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.000 0.000    t      0.00    0.000    1.00  0.000</span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.017 0.045    t      0.38    0.017    0.35 -0.059</span></span></code></pre></div>
 <p>Here we see more 0 CPI values because the classification error is
 less sensitive to small changes and hence results in lower power.</p>
 </div>
@@ -430,24 +437,24 @@ less sensitive to small changes and hence results in lower power.</p>
 permutation test (<code>&quot;fisher&quot;</code>) and Bayesian testing
 (<code>&quot;bayes&quot;</code>) with the package <em>BEST</em>. For example, we
 re-run the first example with Fisher’s permutation test:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">test =</span> <span class="st">&quot;fisher&quot;</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE   test p.value    ci.lo</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.00864 0.00441 fisher  0.0255  0.00131</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.02225 0.01082 fisher  0.0180  0.00459</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.00000 0.00000 fisher  1.0000  0.00000</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4            color  0.03918 0.01555 fisher  0.0040  0.01390</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5         dilution  0.00864 0.00780 fisher  0.1395 -0.00435</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids -0.00039 0.00039 fisher  1.0000 -0.00078</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.00720 0.00738 fisher  0.1700 -0.00473</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.00344 0.00366 fisher  0.1635 -0.00249</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9            malic  0.01378 0.00394 fisher  0.0005  0.00700</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -0.00118 0.00289 fisher  0.6405 -0.00614</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11         phenols -0.00192 0.00431 fisher  0.6695 -0.00938</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.00926 0.00476 fisher  0.0220  0.00128</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.05066 0.01421 fisher  0.0005  0.02737</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    <span class="at">test =</span> <span class="st">&quot;fisher&quot;</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt;           Variable      CPI      SE   test p.value    ci.lo</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; 1       alcalinity  0.00864 0.00441 fisher  0.0255  0.00131</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; 2          alcohol  0.02225 0.01082 fisher  0.0180  0.00459</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; 3              ash  0.00000 0.00000 fisher  1.0000  0.00000</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; 4            color  0.03918 0.01555 fisher  0.0040  0.01390</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; 5         dilution  0.00864 0.00780 fisher  0.1395 -0.00435</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt; 6       flavanoids -0.00039 0.00039 fisher  1.0000 -0.00078</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt; 7              hue  0.00720 0.00738 fisher  0.1700 -0.00473</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; 8        magnesium  0.00344 0.00366 fisher  0.1635 -0.00249</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="co">#&gt; 9            malic  0.01378 0.00394 fisher  0.0005  0.00700</span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="co">#&gt; 10   nonflavanoids -0.00118 0.00289 fisher  0.6405 -0.00614</span></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="co">#&gt; 11         phenols -0.00192 0.00431 fisher  0.6695 -0.00938</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a><span class="co">#&gt; 12 proanthocyanins  0.00926 0.00476 fisher  0.0220  0.00128</span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">#&gt; 13         proline  0.05066 0.01421 fisher  0.0005  0.02737</span></span></code></pre></div>
 </div>
 <div id="knockoff-procedures" class="section level1">
 <h1>Knockoff procedures</h1>
@@ -460,18 +467,18 @@ used by changing the <code>knockoff_fun</code> or the
 <code>data.frame</code> with the original data as input and returning a
 <code>data.frame</code> with the knockoffs. For example, we use
 sequential knockoffs from the <em>seqknockoff</em> package<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mytask <span class="ot">&lt;-</span> <span class="fu">as_task_regr</span>(iris, <span class="at">target =</span> <span class="st">&quot;Petal.Length&quot;</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> mytask, <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;regr.ranger&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>), </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">knockoff_fun =</span> seqknockoff<span class="sc">::</span>knockoffs_seq)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>mytask <span class="ot">&lt;-</span> <span class="fu">as_task_regr</span>(iris, <span class="at">target =</span> <span class="st">&quot;Petal.Length&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> mytask, <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;regr.ranger&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>), </span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>    <span class="at">knockoff_fun =</span> seqknockoff<span class="sc">::</span>knockoffs_seq)</span></code></pre></div>
 <p>The <code>x_tilde</code> argument directly takes the knockoff
 data:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(seqknockoff)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>x_tilde <span class="ot">&lt;-</span> <span class="fu">knockoffs_seq</span>(iris[, <span class="sc">-</span><span class="dv">3</span>])</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>mytask <span class="ot">&lt;-</span> <span class="fu">as_task_regr</span>(iris, <span class="at">target =</span> <span class="st">&quot;Petal.Length&quot;</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> mytask, <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;regr.ranger&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>), </span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x_tilde =</span> x_tilde)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">library</span>(seqknockoff)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>x_tilde <span class="ot">&lt;-</span> <span class="fu">knockoffs_seq</span>(iris[, <span class="sc">-</span><span class="dv">3</span>])</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>mytask <span class="ot">&lt;-</span> <span class="fu">as_task_regr</span>(iris, <span class="at">target =</span> <span class="st">&quot;Petal.Length&quot;</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> mytask, <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;regr.ranger&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>), </span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>), </span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a>    <span class="at">x_tilde =</span> x_tilde)</span></code></pre></div>
 </div>
 <div id="group-cpi" class="section level1">
 <h1>Group CPI</h1>
@@ -479,23 +486,23 @@ data:</p>
 also calculate it for groups of features by replacing data of whole
 groups with the respective knockoff data. In <code>cpi()</code> this can
 be done with the <code>groups</code> argument:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;iris&quot;</span>), </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>), </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">groups =</span> <span class="fu">list</span>(<span class="at">Sepal =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">Petal =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>))</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;   Group    CPI    SE test statistic estimate p.value   ci.lo</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1 Sepal 0.0033 0.009    t      0.37   0.0033   0.358 -0.0118</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2 Petal 0.0192 0.011    t      1.82   0.0192   0.037  0.0015</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;iris&quot;</span>), </span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.glmnet&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">lambda =</span> <span class="fl">0.01</span>),</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;holdout&quot;</span>), </span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>    <span class="at">groups =</span> <span class="fu">list</span>(<span class="at">Sepal =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">Petal =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>))</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt;   Group    CPI    SE test statistic estimate p.value   ci.lo</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">#&gt; 1 Sepal 0.0033 0.009    t      0.37   0.0033   0.358 -0.0118</span></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt; 2 Petal 0.0192 0.011    t      1.82   0.0192   0.037  0.0015</span></span></code></pre></div>
 </div>
 <div id="parallelization" class="section level1">
 <h1>Parallelization</h1>
 <p>For parallel execution, we need to register a parallel backend.
 Parallelization will be performed by the features, i.e. the CPI for each
 feature will be calculated in parallel. For example:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>doParallel<span class="sc">::</span><span class="fu">registerDoParallel</span>(<span class="dv">4</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>doParallel<span class="sc">::</span><span class="fu">registerDoParallel</span>(<span class="dv">4</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">cpi</span>(<span class="at">task =</span> <span class="fu">tsk</span>(<span class="st">&quot;wine&quot;</span>), </span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>    <span class="at">learner =</span> <span class="fu">lrn</span>(<span class="st">&quot;classif.ranger&quot;</span>, <span class="at">predict_type =</span> <span class="st">&quot;prob&quot;</span>, <span class="at">num.trees =</span> <span class="dv">10</span>),</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>    <span class="at">resampling =</span> <span class="fu">rsmp</span>(<span class="st">&quot;cv&quot;</span>, <span class="at">folds =</span> <span class="dv">5</span>))</span></code></pre></div>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />

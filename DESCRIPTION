@@ -1,8 +1,8 @@
 Package: cpi
 Type: Package
 Title: Conditional Predictive Impact
-Version: 0.1.4
-Date: 2022-03-02
+Version: 0.1.5
+Date: 2024-11-05
 Authors@R: 
     c(person(given = "Marvin N.",
              family = "Wright",
@@ -21,17 +21,17 @@ Description: A general test for conditional independence in supervised learning
   and outcomes.
 License: GPL (>= 3)
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 URL: https://github.com/bips-hb/cpi, https://bips-hb.github.io/cpi/
 BugReports: https://github.com/bips-hb/cpi/issues
 Imports: foreach, mlr3, lgr, knockoff
-Suggests: BEST, mlr3learners, ranger, glmnet, testthat (>= 3.0.0),
-        knitr, rmarkdown, doParallel
+Suggests: mlr3learners, ranger, glmnet, testthat (>= 3.0.0), knitr,
+        rmarkdown, doParallel
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-03-02 07:54:32 UTC; wright
+Packaged: 2024-11-25 14:24:30 UTC; wright
 Author: Marvin N. Wright [aut, cre] (<https://orcid.org/0000-0002-8542-6291>),
   David S. Watson [aut]
 Repository: CRAN
-Date/Publication: 2022-03-03 09:10:02 UTC
+Date/Publication: 2024-11-25 15:10:02 UTC
